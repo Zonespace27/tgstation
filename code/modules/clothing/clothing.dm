@@ -286,7 +286,7 @@
 		how_cool_are_your_threads += "</span>"
 		. += how_cool_are_your_threads.Join()
 
-	if(armor.has_any_armor() || flags_cover & HEADCOVERSMOUTH || flags_cover & PEPPERPROOF)
+	if(armor?.has_any_armor() || flags_cover & HEADCOVERSMOUTH || flags_cover & PEPPERPROOF)
 		. += span_notice("It has a <a href='?src=[REF(src)];list_armor=1'>tag</a> listing its protection classes.")
 
 /obj/item/clothing/Topic(href, href_list)
